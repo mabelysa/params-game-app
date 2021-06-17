@@ -1,0 +1,2 @@
+class ParamsGameController < ApplicationController
+end
