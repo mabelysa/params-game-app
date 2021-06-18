@@ -15,17 +15,14 @@ class ParamsGameController < ApplicationController
       output_message = "Pick lower!"
     elsif input_guess < winning_number
       output_message = "Pick higher!"
-    else 
+    else
       output_message = "You win!"
     end
-      render json {message: output_message}
-    end
+    render json: { message: output_message }
   end
 
   def segment_params
     input_value = params["this_is_a_key"]
-    render json: {message: "The url segment is #{input_value}"
-  end 
-
-  
+    render json: { message: "The url segment is #{input_value}" }
+  end
 end

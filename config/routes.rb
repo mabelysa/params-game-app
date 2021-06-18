@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   get "/segment_params/:this_is_a_key" => "params_game#segment_params"
 
   get "/segment_guess/:the_users_guess" => "params_game#guessgame"
+
+  post "/body_params" => "params_game#guessgame"
+
+  post ""
 end
